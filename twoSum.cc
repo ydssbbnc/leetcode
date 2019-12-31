@@ -1,5 +1,4 @@
 #include<iostream>
-#include"twoSum.h"
 #include<vector>
 #include<unordered_map>
 using namespace std;
