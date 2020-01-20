@@ -35,12 +35,7 @@ public:
     vector<int>stack;
     stack.push_back(nums[0]);
     for(int i=1;i<len;++i)
-      if(nums[i]>stack.back())
-	stack.push_back(nums[i]);
-      else{
-	int pos=biSearch(stack,nums[i]);
-	stack[pos]=nums[i];
-      }
+      stack[biSearch(stack,nums[i])]=nums[i];
     return stack.size();
   }
 };
